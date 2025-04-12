@@ -19,7 +19,10 @@
 # read the data
 import pandas as pd
 visitor_df=pd.read_csv('clustervisitor.csv')
+
+
 # Perform segmentation based on characteristics (e.g., age groups)
+
 age_groups = {
     'Young': visitor_df['Age'] <= 30,
     'Middle-aged': (visitor_df['Age'] > 30) & (visitor_df['Age'] <= 50),
